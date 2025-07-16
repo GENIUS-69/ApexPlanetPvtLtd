@@ -1,0 +1,84 @@
+/* Base styles for all screen sizes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.content {
+    background-color: #add8e6;
+    /* Light Blue default */
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    /* Default max width */
+    width: 90%;
+    /* Default width */
+    flex-grow: 1;
+    /* Allows content to take available space */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: auto;
+    /* Pushes footer to the bottom */
+}
+
+/* Media Query for screens smaller than 768px (e.g., tablets and mobiles) */
+@media screen and (max-width: 768px) {
+    .content {
+        background-color: #ffcccb;
+        /* Light Red on smaller screens */
+        width: 95%;
+        /* Take more width on smaller screens */
+        margin: 15px auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* Media Query for screens smaller than 480px (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header,
+    footer {
+        padding: 8px 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .content {
+        background-color: #c8e6c9;
+        /* Light Green on very small screens */
+        width: 100%;
+        margin: 10px 0;
+        border-radius: 0;
+        /* No border-radius on very small screens */
+        box-shadow: none;
+    }
+}
