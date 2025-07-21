@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <!-- Shopping Section -->
+    <section class="section" id="shop">
+      <h2><big>🛒 Product Listings</big></h2>
+
+      <div class="controls">
+        <select id="categoryFilter" onchange="filterProducts()">
+          <option value="all">All</option>
+          <option value="saree">Saree</option>
+          <option value="jeans">Jeans</option>
+          <option value="tshirt">T-Shirts</option>
+          <option value="kurta">Kurta</option>
+          <option value="shoes">Shoes</option>
+          <option value="watch">Watch</option>
+          <option value="bangles">Bangles</option>
+          <option value="monkeycap">Monkey Cap</option>
+          <option value="jacket">Jacket</option>
+          <option value="charger">Charger</option>
+          <option value="notebook">Notebook</option>
+          <option value="socks">Socks</option>
+          <option value="blazer">Blazer</option>
+          <option value="medicine">Medicine</option>
+          <option value="bracelet">Bracelet</option>
+          <option value="mobile">Mobile</option>
+          <option value="earring">Ear Rings</option>
+          <option value="top">Top</option>
+          <option value="studylight">Study Lamp</option>
+          <option value="powder">Powder</option>
+          <option value="skincare">Skin Care</option>
+          <option value="belt">Belt</option>
+          <option value="luggage">Luggage</option>
+          <option value="wallet">Wallet</option>
+          <option value="schoolbag">School Bag</option>
+          <option value="goggles">Goggles</option>
+          <option value="handbag">Hand Bag</option>
+          <option value="jewellery">Jewellery</option>
+          <option value="sleeper">Flip Flop</option>
+          <option value="shirts">Funky Shirts</option>
+        </select>
+
+        <select id="sortFilter" onchange="sortProducts()">
+          <option value="rating">Sort by Rating</option>
+          <option value="price">Sort by Price</option>
+          <option value="name">Sort by Name</option>
+        </select>
+      </div>
+
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
