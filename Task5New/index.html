@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gopal Choudhary | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .skills-container div {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .nav-items {
+        display: flex;
+        gap: 20px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .logo-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .logo {
+        height: 48px;
+      }
+      .user-photo {
+        width: 150px;
+        border-radius: 50%;
+        display: block;
+        margin: 20px auto;
+      }
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+      }
+      .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 2rem;
+        border-radius: 10px;
+        width: 90%;
+        max-width: 500px;
+        position: relative;
+      }
+      .modal-content input,
+      .modal-content select {
+        width: 100%;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      .close-btn {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 25px;
+        color: #e84949;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <div class="logo-container">
+          <img
+            src="https://img.icons8.com/fluency/48/source-code.png"
+            class="logo"
+          />
+          <div class="logo-text">Sarthak Portfolio</div>
+        </div>
+        <div class="nav-items">
+          <div><a href="#projects">Projects</a></div>
+          <div><a href="#skills">Skills</a></div>
+          <div><a href="#contactme">Contact Me</a></div>
+        </div>
+      </div>
+
+      <img src="./MyImg.jpg" alt="Gopal Photo" class="user-photo" />
+
+      <section class="hero-section">
+        <div class="hero-section-left">
+          <div class="hero-section-heading">Hi! I'm <b>GOPAL CHOUDHARY</b></div>
+          <div class="hero-section-heading hero-section-sub-heading"></div>
+          <div class="hero-section-description">
+            <h2>About Me</h2>
+             <big>I am Sarthak Hota, currently pursuing my studies at Sambalpur University, Sambalpur. I am learning to become a software developer, skilled in Java, Spring Boot, HTML, CSS, JavaScript, and MySQL. With a strong foundation in communication and logical reasoning, I have honed my skills through practical experiences.
+
+             I have successfully completed internships at ApexPlanet and Cognifyz, where I engaged in real-world projects that enhanced my technical and professional competencies. My dedication and problem-solving abilities were recognized when I secured the third prize in a college-level hackathon, demonstrating my capacity to innovate and perform under pressure.
+
+             I am committed to continuous learning and aspire to contribute meaningfully to every project I undertake.</big>
+          </div>
+          <a
+            href="./hire-form.html"
+            class="btn-pink"
+            >Hire Me</a
+          >
+        </div>
+      </section>
+
+      <section class="project-section" id="projects">
+        <h2 class="page-header">Projects</h2>
+        <div class="project-container">
+          <div class="project-card" id="faceRecog">
+            <img src="./facerecog.jpg" class="project-skill" />
+            <h2 class="project-heading">Face Recognition System</h2>
+            <div class="project-subHeading">
+              A Python-based face recognition system using OpenCV & deep
+              learning that identifies faces in real-time from webcam feed.
+            </div>
+            <div class="btn-grp">
+              <a
+                href="./facerecog-details.html"
+                target="_blank"
+                class="btn-pink btn-project"
+                >Read More</a
+              >
+            </div>
+          </div>
+          <div class="project-card" id="quizSite">
+            <img src="./quizsite.jpg" class="project-skill" />
+            <h2 class="project-heading">Quiz Website</h2>
+            <div class="project-subHeading">
+              A dynamic quiz platform built with HTML, CSS and JavaScript to
+              test user knowledge and show score instantly.
+            </div>
+            <div class="btn-grp">
+              <a
+                href="./quizsite-details.html"
+                target="_blank"
+                class="btn-pink btn-project"
+                >Read More</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills-container" id="skills">
+        <h2 class="page-header">Skills</h2>
+        <div
+          class="skill-wrapper"
+          style="
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;">
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              class="skills-logo"
+              alt="HTML5 Logo"
+            />
+            <figcaption>HTML5</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              class="skills-logo"
+              alt="CSS3 Logo"
+            />
+            <figcaption>CSS3</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              class="skills-logo"
+              alt="JavaScript Logo"
+            />
+            <figcaption>JavaScript</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+              class="skills-logo"
+              alt="Java Logo"
+            />
+            <figcaption>Java</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+              class="skills-logo"
+              alt="Spring Logo"
+            />
+            <figcaption>Spring</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+              class="skills-logo"
+              alt="MySQL Logo"
+            />
+            <figcaption>MySQL</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="contact-form-container" id="contactme">
+        <h1 class="contact-heading">Contact Me</h1>
+        <form class="form" onsubmit="saveMessage(event)">
+          <input type="text" placeholder="Name" id="name" required />
+          <input type="email" placeholder="Email" id="email" required />
+          <textarea
+            placeholder="Message"
+            id="message"
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit" class="btn-pink">Send Message</button>
+        </form>
+      </section>
+    </div>
+    <script>
+      const hireModal = document.getElementById("hireModal");
+
+      document.getElementById("btn").addEventListener("click", function () {
+        hireModal.style.display = "block";
+      });
+
+      function closeHireModal() {
+        hireModal.style.display = "none";
+      }
+
+      // Optional: close modal on outside click
+      window.onclick = function (event) {
+        if (event.target === hireModal) {
+          hireModal.style.display = "none";
+        }
+      };
+    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </body>
+</html>

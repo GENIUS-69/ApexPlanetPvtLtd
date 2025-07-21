@@ -1,0 +1,140 @@
+<!-- File: projects/facerecog-details.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Face Recognition System - Project Details</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .project-detail-wrapper {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .project-heading {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+      border-bottom: 3px solid #e67e22;
+      display: inline-block;
+      padding-bottom: 10px;
+    }
+
+    .description {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #34495e;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px 15px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f39c12;
+      color: white;
+      width: 30%;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .navbar {
+      padding: 10px 30px;
+      background-color: #2c3e50;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ecf0f1;
+    }
+
+    .logo {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-items {
+      display: flex;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="https://img.icons8.com/fluency/48/source-code.png" class="logo" />
+        <div class="logo-text">Sarthak</div>
+      </div>
+      <div class="nav-items">
+        <div><a href="../index.html#projects">← Back to Portfolio</a></div>
+      </div>
+    </div>
+
+    <section class="project-detail-wrapper">
+      <h1 class="project-heading">Face Recognition System</h1>
+
+      <p class="description">
+        This project is a real-time Face Recognition System developed using Python and OpenCV. It utilizes deep learning techniques and Haar Cascade Classifiers to detect and recognize faces from a webcam feed.
+      </p>
+
+      <table>
+        <tr>
+          <th>Language</th>
+          <td>Python</td>
+        </tr>
+        <tr>
+          <th>Libraries</th>
+          <td>OpenCV, NumPy, face_recognition</td>
+        </tr>
+        <tr>
+          <th>Features</th>
+          <td>
+            <ul>
+              <li>Live face detection through webcam</li>
+              <li>Face recognition using deep learning embeddings</li>
+              <li>Automatic marking of known and unknown users</li>
+              <li>Highly accurate and fast processing</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <p class="description">
+        This system can be integrated into security applications or attendance systems and works efficiently with multiple face profiles.
+      </p>
+    </section>
+  </div>
+</body>
+</html>
